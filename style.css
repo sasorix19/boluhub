@@ -1,0 +1,70 @@
+/* BASE - MODO OSCURO */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#121212; color:#e0e0e0; }
+
+/* CABECERA */
+header { 
+    background: violet; 
+    color: black; 
+    padding: 1rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+header h1 { color: black; }
+nav ul { list-style: none; display: flex; gap: 1rem; }
+nav a { color: black; text-decoration: none; font-weight: bold; cursor:pointer; }
+
+/* POST CREATOR */
+.post-creator { 
+    background:#1e1e1e; 
+    padding:1rem; 
+    margin:1rem auto; 
+    width:90%; max-width:600px; 
+    border-radius:8px; 
+    box-shadow:0 0 5px rgba(0,0,0,0.5); 
+    display:flex; flex-direction:column; gap:0.5rem; 
+}
+.post-creator textarea { 
+    width:100%; padding:0.5rem; resize:none; height:80px; border-radius:4px; border:1px solid #333; background:#2a2a2a; color:#e0e0e0; 
+}
+.file-label { font-size:1.5rem; cursor:pointer; }
+#postButton { background:#0077cc; color:white; border:none; padding:0.5rem; border-radius:4px; cursor:pointer; font-weight:bold; }
+
+/* FEED Y POSTS */
+.feed { width:90%; max-width:600px; margin:1rem auto; }
+.post { 
+    background:#1e1e1e; 
+    padding:0.5rem; 
+    margin-bottom:1rem; 
+    border-radius:8px; 
+    box-shadow:0 0 5px rgba(0,0,0,0.5); 
+    position:relative; 
+    color:#e0e0e0; 
+}
+.post-header { display:flex; align-items:center; gap:0.5rem; margin-bottom:0.3rem; }
+.post-mini-pic { width:30px; height:30px; border-radius:50%; object-fit:cover; cursor:pointer; }
+.post-user { cursor:pointer; }
+.post-media { width:100%; max-height:400px; object-fit:cover; border-radius:8px; margin-top:0.5rem; }
+
+/* BOTONES POST */
+.post-buttons { display:flex; gap:1rem; margin-top:0.5rem; }
+.post-buttons button { border:none; cursor:pointer; background:none; font-size:1.2rem; color:#e0e0e0; }
+.delete-btn { color:#ff5555; position:absolute; top:5px; right:5px; font-size:1rem; cursor:pointer; }
+
+/* COMENTARIOS */
+.comment-section { margin-top:0.5rem; display:none; }
+.comment-section input { width:80%; padding:0.3rem; margin-right:0.3rem; border-radius:4px; border:1px solid #333; background:#2a2a2a; color:#e0e0e0; }
+.comment-section button { padding:0.3rem 0.5rem; border-radius:4px; border:none; background:#28a745; color:white; cursor:pointer; font-size:0.9rem; }
+.comment { margin-top:0.3rem; padding:0.3rem; background:#2a2a2a; border-radius:4px; font-size:0.9rem; color:#e0e0e0; }
+
+/* PERFIL */
+.profile-header { display:flex; gap:1rem; background:#1e1e1e; padding:1rem; border-radius:8px; margin:1rem auto; max-width:600px; box-shadow:0 0 5px rgba(0,0,0,0.5); }
+.profile-photo { position:relative; }
+.profile-photo img { width:100px; height:100px; border-radius:50%; object-fit:cover; cursor:pointer; }
+.file-label-small { position:absolute; bottom:0; right:0; background:#2a2a2a; border-radius:50%; padding:0.2rem; cursor:pointer; color:#e0e0e0; }
+.profile-info input, .profile-info textarea { display:block; margin-bottom:0.5rem; width:100%; padding:0.3rem; background:#2a2a2a; color:#e0e0e0; border:1px solid #333; }
+#editProfileBtn { margin-top:0.5rem; padding:0.3rem 0.6rem; border-radius:4px; border:1px solid #0077cc; background:#1e1e1e; color:#e0e0e0; cursor:pointer; }
+
+/* FOOTER */
+footer { text-align:center; padding:1rem; background:#1f1f1f; color:#ccc; margin-top:2rem; }

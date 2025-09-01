@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoluHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>BoluHub</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="post-creator">
+            <textarea id="postContent" placeholder="¿Qué estás pensando?"></textarea>
+            <label for="postMedia" class="file-label">📷</label>
+            <input type="file" id="postMedia" accept="image/*,video/*" hidden>
+            <button id="postButton">Publicar</button>
+        </div>
+        <div class="feed" id="feed"></div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil" style="display:none">
+        <div class="profile-header">
+            <div class="profile-photo">
+                <img id="profilePic" src="https://via.placeholder.com/100" alt="Foto de perfil">
+                <input type="file" id="profilePicInput" hidden>
+                <label for="profilePicInput" class="file-label-small" id="editPicLabel" style="display:none;">✏️</label>
+            </div>
+            <div class="profile-info">
+                <div id="profileDisplay">
+                    <h2 id="displayFullName">Nombre completo</h2>
+                    <p id="displayUserName">@usuario</p>
+                    <p id="displayBio">Biografía</p>
+                </div>
+                <div id="profileEdit" style="display:none;">
+                    <input type="text" id="fullName" placeholder="Nombre completo">
+                    <input type="text" id="userName" placeholder="Nombre de usuario">
+                    <textarea id="bio" placeholder="Biografía"></textarea>
+                    <button id="saveProfile">Guardar Perfil</button>
+                </div>
+                <button id="editProfileBtn">✏️ Editar perfil</button>
+            </div>
+        </div>
+
+        <h3>Mis posts:</h3>
+        <div class="feed" id="userFeed"></div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Mi Red Social</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
